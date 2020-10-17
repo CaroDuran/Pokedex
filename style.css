@@ -1,0 +1,56 @@
+.navbar {
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+}
+
+.navbar-brand {
+    background-position: center;
+    margin-left: 37%;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-family: 'Fredoka One', cursive;
+    color: teal;
+    font-size: 60px;
+    text-shadow: 4px 4px 4px white;
+}
+
+.consulta {
+    background-image: url(./img/hipertextual-dale-vida-tus-llamadas-zoom-con-estos-fondos-gratis-pokemon-2020523156.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 8rem;
+    background-size: cover;
+}
+
+.btn {
+    margin-top: 40px;
+    font-size: 30px;
+    background-color: teal;
+    color: white;
+    font-family: 'Quantico', sans-serif;
+}
+
+.buscar {
+    margin-right: 10px;
+    color: teal;
+    font-size: 25px;
+    font-family: 'Quantico', sans-serif;
+    padding-bottom: 20px;
+}
+
+.buscando {
+    width: 500px;
+    margin-left: 5%;
+    font-size: 20px;
+    background-color: lemonchiffon;
+    padding: 6px;
+    border: PowderBlue 5px solid;
+    border-radius: 20px;
+
+}
