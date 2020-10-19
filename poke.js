@@ -21,7 +21,7 @@ $(function () {
             $(".pesopoke").text(` Peso: ${respuesta.weight} [kg]`);
             
 
-            // Información del Grafico // 
+            // Información del Grafico  - DataPoint // 
             var velocidadPokemon = respuesta.stats[5].base_stat;
             var especialDefensa = respuesta.stats[4].base_stat;
             var especialAtaque = respuesta.stats[3].base_stat;
