@@ -53,3 +53,29 @@
     border: PowderBlue 5px solid;
     border-radius: 20px;
 }
+
+/* Información Pokémon */
+
+.namepoke {
+    font-size: 200%;
+    font-family: 'Quantico', sans-serif;
+}
+
+.pesopoke {
+    font-size: 150%;
+    font-family: 'Quantico', sans-serif;
+}
+
+.pokemon {
+    width: 150px;
+}
+
+
+main {
+    max-width: 500px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 700px;
+    grid-template-rows: 200px 200px;
+  }

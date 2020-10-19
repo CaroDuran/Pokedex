@@ -13,46 +13,58 @@ $(function () {
             var base = respuesta.stats;
             console.log(respuesta);
 
-            var nombrePokemon = respuesta.name;
+            var introPokemon = respuesta.name;
 
-            $(".namepoke").append("Aqui deberia aparecer el Nombre "+ nombrePokemon);
-            $("#imgpoke").attr("src", "" +respuesta.sprites.front_default+"");
-
+            $(".namepoke").append(introPokemon);
+            $("#imgpoke").attr("src", "" + respuesta.sprites.front_default+"");
+            $(".pesopoke").append("Peso:", " " + respuesta.weight + " ", "[kg]");
             // Cartilla Pokémon: 
             //console.log(respuesta.name); // Nombre Pokémon // bulbasaur
             //console.log(respuesta.sprites.front_default); // Img sprite
             //console.log(respuesta.weight); // Peso del Pokémon // 69
-            var experienciaGananciaPokemon = respuesta.stats[0].base_stat;
+
+            // Información del Grafico // 
+            var velocidadPokemon = respuesta.stats[5].base_stat;
+            //console.log(base[5].stat.name); // velocidad 
+            var especialDefensa = respuesta.stats[4].base_stat;
+            //console.log(base[4].stat.name); // defensa especial
+            var especialAtaque = respuesta.stats[3].base_stat;
+            //console.log(base[3].stat.name); // ataque especial
+            var defensaPokemon = respuesta.stats[2].base_stat;
+            //console.log(base[2].stat.name); // defensa
+            var ataquePokemon = respuesta.stats[1].base_stat;
+            //console.log(base[1].stat.name); // ataque
+            var vidaPokemon = respuesta.stats[0].base_stat;
+            //console.log(base[0].stat.name); // Vida del Pokémon // hp
+
             var chart = new CanvasJS.Chart("chartContainer", {
                 theme: "light1", // "light2", "dark1", "dark2"
                 animationEnabled: false, // change to true		
                 title:{
-                    text: "Basic Column Chart"
+                    text: "Stats Base"
+                },
+                axisY: {
+                    title: "Valores"
+                },
+                axisX: {
+                    title:"Estadisticas"
                 },
                 data: [
                 {
                     // Change type to "bar", "area", "spline", "pie",etc.
                     type: "column",
                     dataPoints: [
-                        { label: "exp",  y: experienciaGananciaPokemon  },
-                        { label: "orange", y: 15  },
-                        { label: "banana", y: 25  },
-                        { label: "mango",  y: 30  },
-                        { label: "grape",  y: 28  }
+                        { label: "speed",  y: velocidadPokemon},
+                        { label: "special-defense", y: especialDefensa},
+                        { label: "special-attack", y: especialAtaque},
+                        { label: "defense",  y: defensaPokemon},
+                        { label: "attack",  y: ataquePokemon},
+                        { label: "hp",  y: vidaPokemon},
                     ]
                 }
                 ]
             });
             chart.render();
-
-            // Información del Grafico
-            //console.log(base[0].base_stat); // Experiencia que gana // 45
-            //console.log(base[0].stat.name); // Vida del Pokémon // hp
-            //console.log(base[1].stat.name); // ataque
-            //console.log(base[2].stat.name); // defensa
-            //console.log(base[3].stat.name); // ataque especial
-            //console.log(base[4].stat.name); // defensa especial
-            //console.log(base[5].stat.name); // velocidad    
         });
     });
 });
