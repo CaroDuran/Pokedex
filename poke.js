@@ -15,13 +15,14 @@ $(function () {
 
             var introPokemon = respuesta.name;
 
-            $(".namepoke").append(introPokemon);
-            $("#imgpoke").attr("src", "" + respuesta.sprites.front_default+"");
-            $(".pesopoke").append("Peso:", " " + respuesta.weight + " ", "[kg]");
             // Cartilla Pokémon: 
             //console.log(respuesta.name); // Nombre Pokémon // bulbasaur
             //console.log(respuesta.sprites.front_default); // Img sprite
             //console.log(respuesta.weight); // Peso del Pokémon // 69
+            $(".namepoke").text(introPokemon);
+            $("#imgpoke").attr("src", "" + respuesta.sprites.front_default+"");
+            $(".pesopoke").text(` Peso: ${respuesta.weight} [kg]`);
+            
 
             // Información del Grafico // 
             var velocidadPokemon = respuesta.stats[5].base_stat;
@@ -38,7 +39,7 @@ $(function () {
             //console.log(base[0].stat.name); // Vida del Pokémon // hp
 
             var chart = new CanvasJS.Chart("chartContainer", {
-                theme: "light1", // "light2", "dark1", "dark2"
+                theme: "dark2",  
                 animationEnabled: false, // change to true		
                 title:{
                     text: "Stats Base"

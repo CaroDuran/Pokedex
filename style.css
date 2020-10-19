@@ -59,23 +59,25 @@
 .namepoke {
     font-size: 200%;
     font-family: 'Quantico', sans-serif;
+    text-align: 20px;
+    color: white;
 }
 
 .pesopoke {
     font-size: 150%;
     font-family: 'Quantico', sans-serif;
+    color: white;
 }
 
 .pokemon {
     width: 150px;
 }
 
-
 main {
-    max-width: 500px;
-    padding: 1rem;
-    margin: 0 auto;
+    background-color: teal;
+    padding-top: 30px;
     display: grid;
-    grid-template-columns: 400px 700px;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 30% 70% ;
+    grid-template-rows: 100% 100%;
+    background-size: cover;
   }
