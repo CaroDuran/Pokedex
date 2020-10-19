@@ -34,6 +34,7 @@
     background-color: teal;
     color: white;
     font-family: 'Quantico', sans-serif;
+    
 }
 
 .buscar {
@@ -42,6 +43,7 @@
     font-size: 25px;
     font-family: 'Quantico', sans-serif;
     padding-bottom: 20px;
+    
 }
 
 .buscando {
@@ -52,14 +54,28 @@
     padding: 6px;
     border: PowderBlue 5px solid;
     border-radius: 20px;
+    right:0px;
+    top:0px;
+    box-shadow: 0 5px 5px rgba(11, 165, 165, 0.5);
+    position:relative;
 }
 
 /* Información Pokémon */
 
+.cartillapokemon {
+    margin-left: 60px;
+
+}
+
+.grafico {
+    margin-right: 40px;
+}
+
 .namepoke {
     font-size: 200%;
+    padding-top: 30px;
     font-family: 'Quantico', sans-serif;
-    text-align: 20px;
+    text-align: 70px;
     color: white;
 }
 

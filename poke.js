@@ -20,7 +20,7 @@ $(function () {
             //console.log(respuesta.sprites.front_default); // Img sprite
             //console.log(respuesta.weight); // Peso del Pokémon // 69
             $(".namepoke").text(introPokemon);
-            $("#imgpoke").attr("src", "" + respuesta.sprites.front_default+"");
+            $("#imgpoke").attr("src", "" + respuesta.sprites.front_default + "" );
             $(".pesopoke").text(` Peso: ${respuesta.weight} [kg]`);
             
 
