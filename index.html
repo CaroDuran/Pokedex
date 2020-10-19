@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,43 +11,47 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quantico:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Pokédex-CD</title>
     <link rel="icon" type="icono" href="img/iconpng.webp">
-    <title>Pokédex</title>
   </head>
   <body>
 
-<nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img clas="logo-principal" src="./img/logo1.png" width="40%" alt="logo-pokemon" loading="lazy">
-    </a>
-  </nav>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+        <img clas="logo-principal" src="./img/logo1.png" width="40%" alt="logo-pokemon" loading="lazy">
+        </a>
+    </nav>
 
         <section class="consulta">
             <h1 class="titulo">PokeBusqueda</h1>
-            <form action="busqueda">
-                <fieldset>
                 <div>
                     <label class="buscar" for="numbers">Busca un Pokémon usando el número Nacional:</label>
                     <input class="buscando" type="number" placeholder="número de 1 a 807">
                 </div>
-                </fieldset>
-                <input class="btn" type="submit" value="Consultar">
-            </form>
+              <button class="btn" type="submit" value="Consultar">Consultar</button>
+        </section>
+
+        <section>
+            <div>
+                <p class="namepoke"></p>
+                <img src="" id="imgpoke" class="pokemon" alt="">
+            </div>
         </section>
 
 
+        
+
+          
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="poke.js"></script>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
   </body>
-</html>
+</html
