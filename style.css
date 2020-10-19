@@ -63,12 +63,14 @@
 /* Información Pokémon */
 
 .cartillapokemon {
-    margin-left: 60px;
-
+    margin-top: 50px;
+    text-align: center;
 }
 
 .grafico {
+    margin-top: 50px;
     margin-right: 40px;
+    margin-bottom: 80px;
 }
 
 .namepoke {
